@@ -1,0 +1,86 @@
+:root{
+  --gap: 12px;
+  --col-width: 220px;
+  --cell-padding: 10px;
+  --success: #d4f5d7;
+  --fail: #ffd7d7;
+  --accent: #2b7aee;
+  --muted: #666;
+  --border: #ddd;
+}
+
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+
+body{
+  margin:24px;
+  background: #fafafa;
+  color:#111;
+}
+
+.widget{max-width:1200px;margin:0 auto;}
+
+.title{font-size:1.25rem;margin-bottom:8px}
+
+.controls{
+  display:flex;gap:8px;align-items:center;margin-bottom:16px;
+}
+
+.controls button{
+  padding:8px 12px;border-radius:6px;border:1px solid var(--border);background:white;cursor:pointer;
+}
+.controls button:hover{box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.status{margin-left:12px;color:var(--muted);font-size:.95rem}
+
+.columns{
+  display:flex;gap:var(--gap);align-items:start;
+  overflow:auto;padding-bottom:8px;
+}
+
+/* Column container */
+.column{
+  width:var(--col-width);min-width:var(--col-width);
+  background:white;border:1px solid var(--border);border-radius:8px;padding:8px;
+  display:flex;flex-direction:column;gap:8px;
+}
+
+/* Column header */
+.col-header{font-weight:600;font-size:.95rem;padding:6px 8px;border-bottom:1px dashed var(--border);}
+
+/* List of cells */
+.list{list-style:none;padding:6px;margin:0;display:flex;flex-direction:column;gap:8px;min-height:60px}
+.cell{
+  display:flex;align-items:center;gap:8px;padding:var(--cell-padding);border-radius:6px;border:1px solid var(--border);
+  background:linear-gradient(180deg,#fff,#fbfbfb);cursor:grab;
+  touch-action: none; /* allow pointer drag without scroll interference */
+}
+.cell.dragging{opacity:.4}
+.cell img{max-width:56px;max-height:56px;border-radius:4px;object-fit:contain}
+
+/* list drop indicator */
+.placeholder{
+  height:48px;border:2px dashed var(--accent);border-radius:6px;margin:2px 0;
+}
+
+/* row highlight when checking */
+.row{
+  display:flex;gap:var(--gap);margin-top:6px;align-items:stretch;
+}
+.row.correct .cell{background:var(--success)}
+.row.incorrect .cell{background:var(--fail)}
+
+/* ghost for pointer dragging */
+.drag-ghost{
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  opacity: 0.95;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+  border-radius: 6px;
+  background: white;
+}
+
+/* small responsive adjustments */
+@media (max-width:720px){
+  .columns{flex-direction:column}
+}
