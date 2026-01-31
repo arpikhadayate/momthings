@@ -13,7 +13,7 @@ This project is designed for personal convenience and cross‑device access.
 ## **🌐 Live Demo**
 
 **Frontend (GitHub Pages)**  
-`https://arpikhadayate.github.io/momthings/` [(arpikhadayate.github.io in Bing)](https://www.bing.com/search?q="https%3A%2F%2Farpikhadayate.github.io%2Fmomthings%2F")
+- [Get Brahma Muhurats for next 30 days](https://arpikhadayate.github.io/momthings/life-hack-tools/frontend/index.html?env=render)
 
 **Backend API (Render)**  
 `https://momthings-backend.onrender.com/api/brahma`  
