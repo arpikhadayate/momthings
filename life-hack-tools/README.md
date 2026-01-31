@@ -10,7 +10,7 @@ This project is designed for personal convenience and cross‑device access.
 
 ---
 
-## **🌐 Live Demo**
+## **Live Demo**
 
 **Frontend (GitHub Pages)**  
 - [Get Brahma Muhurats for next 30 days](https://arpikhadayate.github.io/momthings/life-hack-tools/frontend/index.html?env=render)
@@ -21,7 +21,7 @@ This project is designed for personal convenience and cross‑device access.
 
 ---
 
-## ** How It Works**
+## **How It Works**
 
 ### **Backend**
 - Generates the next 30 dates
@@ -36,7 +36,7 @@ This project is designed for personal convenience and cross‑device access.
 
 ---
 
-## ** Running Locally**
+## **Running Locally**
 
 ### **Backend**
 ```bash commands
@@ -56,7 +56,7 @@ Open `frontend/index.html` directly in your browser.
 
 ---
 
-## ** Deployment**
+## **Deployment**
 
 ### **Backend (Render)**
 - Create a new Web Service
@@ -71,7 +71,7 @@ Open `frontend/index.html` directly in your browser.
 - Select folder: `/frontend`
 - Save
 
-Your site will be available at:
+Site will be available at:
 
 ```
 https://arpikhadayate.github.io/momthings/
@@ -79,7 +79,7 @@ https://arpikhadayate.github.io/momthings/
 
 ---
 
-## ** License**
+## **License**
 
 This project is licensed under the MIT License.  
 See the `LICENSE` file for details.
