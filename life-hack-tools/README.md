@@ -16,8 +16,8 @@ This project is designed for personal convenience and cross‑device access.
 `https://arpikhadayate.github.io/momthings/` [(arpikhadayate.github.io in Bing)](https://www.bing.com/search?q="https%3A%2F%2Farpikhadayate.github.io%2Fmomthings%2F")
 
 **Backend API (Render)**  
-`https://your-render-app.onrender.com/api/brahma`  
-*TODO: (Replace with your actual Render URL once deployed.)*
+`https://momthings-backend.onrender.com/api/brahma`  
+
 
 ---
 

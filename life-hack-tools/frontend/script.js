@@ -7,7 +7,7 @@ async function loadTable() {
 const API_URL =
   env === "local"
     ? "http://localhost:3000/api/brahma"
-    : "https://your-render-app.onrender.com/api/brahma"; //TODO: change this
+    : "https://momthings-backend.onrender.com/api/brahma"; 
 
 
   try {
